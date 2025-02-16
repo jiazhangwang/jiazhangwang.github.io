@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的名字 - 个人网页</title>
+    <title>Your Name - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #333;
+            color: #fff;
             padding: 20px 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: white;
+            background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #4CAF50;
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
         a {
-            color: #4CAF50;
+            color: #0077cc;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info a {
-            margin-right: 15px;
         }
         .section {
             margin-bottom: 30px;
@@ -52,77 +56,82 @@
         .section ul li {
             margin-bottom: 10px;
         }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info a {
+            margin: 0 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>你的名字</h1>
-        <p>职业/身份</p>
+        <h1>Your Name</h1>
+        <p>Your Profession or Tagline</p>
     </header>
 
     <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Your Name, a passionate professional in [Your Field]. I specialize in [Your Skills] and enjoy working on [Your Interests]. I'm always eager to learn new technologies and solve challenging problems.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Degree, Major</strong> - University Name, Year</li>
+                <li><strong>Degree, Major</strong> - University Name, Year</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Job Title</strong> - Company Name, Year</li>
+                <li><strong>Job Title</strong> - Company Name, Year</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong><a href="https://github.com/your-username/project1">Project 1</a></strong> - A brief description of the project.</li>
+                <li><strong><a href="https://github.com/your-username/project2">Project 2</a></strong> - A brief description of the project.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, JavaScript, Java, C++</li>
+                <li><strong>Frameworks & Tools:</strong> React, Flask, Docker, Git</li>
+                <li><strong>Other Skills:</strong> Data Analysis, Machine Learning, Project Management</li>
+            </ul>
+        </div>
+
         <div class="contact-info">
-            <a href="mailto:your-email@example.com">邮箱</a>
-            <a href="https://github.com/your-username">GitHub</a>
-            <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
-            <a href="https://your-blog.com">个人博客</a>
-        </div>
-
-        <div class="section">
-            <h2>关于我</h2>
-            <p>你好！我是你的名字，一名你的职业/身份，专注于你的领域/兴趣。我对具体领域或技术充满热情，喜欢解决复杂问题并不断学习新知识。</p>
-        </div>
-
-        <div class="section">
-            <h2>教育背景</h2>
-            <ul>
-                <li><strong>学位，专业</strong><br>学校名称，时间范围<br>描述你的学习经历、课程或项目。</li>
-                <li><strong>学位，专业</strong><br>学校名称，时间范围<br>描述你的学习经历、课程或项目。</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>工作经历</h2>
-            <ul>
-                <li><strong>职位名称</strong><br>公司名称，时间范围<br>描述你的工作职责和成就。</li>
-                <li><strong>职位名称</strong><br>公司名称，时间范围<br>描述你的工作职责和成就。</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>项目</h2>
-            <ul>
-                <li><strong><a href="https://github.com/your-username/project1">项目名称 1</a></strong><br>描述项目的背景和目标。<br>使用的技术栈：Python, Flask, MySQL。</li>
-                <li><strong><a href="https://github.com/your-username/project2">项目名称 2</a></strong><br>描述项目的背景和目标。<br>使用的技术栈：React, Node.js, MongoDB。</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>技能</h2>
-            <ul>
-                <li><strong>编程语言</strong>: Python, JavaScript, Java, C++</li>
-                <li><strong>框架/工具</strong>: React, Flask, Docker, Git</li>
-                <li><strong>其他技能</strong>: 数据分析, 机器学习, 项目管理</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>荣誉与奖项</h2>
-            <ul>
-                <li><strong>奖项名称</strong><br>颁发机构，时间<br>描述奖项的背景和意义。</li>
-                <li><strong>奖项名称</strong><br>颁发机构，时间<br>描述奖项的背景和意义。</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>联系我</h2>
-            <p>如果你对我的工作感兴趣，欢迎通过以下方式联系我：</p>
-            <ul>
-                <li>邮箱: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-                <li>GitHub: <a href="https://github.com/your-username">your-username</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">你的名字</a></li>
-            </ul>
+            <h2>Contact Me</h2>
+            <p>
+                <a href="mailto:your-email@example.com">Email</a> |
+                <a href="https://github.com/your-username">GitHub</a> |
+                <a href="https://linkedin.com/in/your-profile">LinkedIn</a> |
+                <a href="https://your-blog.com">Blog</a>
+            </p>
         </div>
     </div>
+
+    <footer>
+        &copy; 2023 Your Name. All rights reserved.
+    </footer>
 </body>
 </html>
